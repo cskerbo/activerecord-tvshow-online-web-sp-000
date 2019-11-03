@@ -14,5 +14,6 @@ class Show < ActiveRecord::Base
 
   def self.lowest_rating
     self.where("rating = ?", lowest_rating).first
+  end
 
 end
